@@ -1,5 +1,5 @@
- import './style.css' 
-import sha256 from 'crypto-js/sha256';
+ /*import './style.css' 
+import sha256 from 'crypto-js/sha256';*/
 
 
 const section = document.querySelectorAll('section');
@@ -44,7 +44,8 @@ function add() {
         alert("fill this form")
     }
     else {
-        var token = sha256(JSON.stringify(elc) + JSON.stringify(ela) + JSON.stringify(elb)).toString();
+        /*var token = sha256(JSON.stringify(elc) + JSON.stringify(ela) + JSON.stringify(elb)).toString();*/\
+        var token= "kuch nhi h";
         var task = new Profile(elc, ela, elb, token);
         if (task) {
             tasks.push(task);
